@@ -1,36 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body {
     background-image: linear-gradient(to right, #eb3349, #f45c43);
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    
-    color: white;
-    text-align: center  
+section {
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    margin: auto;
+    width: 27%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
 }
 
 section {
-    color: rgb(0, 0, 0);
-    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  label {
+     font-size: 20px;
+     
+  }
+h1 {
     text-align: center;
-    margin: auto;
-    width: 40%;
-    border-style:solid;
-    border-color: rgb(255, 255, 255);
-    background-color: rgba(184, 184, 184, 0.068);
+    font-weight: bold;
+    font-size: 4ch;
+    margin-bottom: 80px;
 }
-
-footer {
-    color: white;
+input[type="number"]{
+    color:#336699;
+    font-family:verdana;
+    background:#e4e3e3;
+    border-style:none;
     text-align: center;
-    font-style: italic;
+    padding: 7px;
+}
+#dia{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+#ano {
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+#mes {
+    margin-bottom: 20px;
 }
 .botoes {
-    font:bolder;
-    padding: 15px;
-    width: 10%;
+    background-image: linear-gradient(to right, #eb3349 0%, #f45c43  51%, #eb3349  100%)
 }
+.botoes {
+       margin: 10px;
+       padding: 15px 68.6px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;   
+       border-radius: 10px;
+       border: none;
+       display: inline;      
+}
+.botoes:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+       cursor: pointer;
+    }
+    
 #rst {
     margin-left: 40px;
+}
+.maior {
+    align-items: left;
+}
+input[type="text"] {
+    color:#336699;
+    font-family:verdana;
+    background:#f7f7f7;
+    border-style:none;
+    text-align: center;
+    padding: 7px;
+}
+#rMes {
+    margin-left: 2px;
+    
+}
+#rDia {
+    margin-left: 115px;
+}
+#rAnos {
+    margin-left: 220px;
+}
+#rSigno {
+    margin-left: 125px;
+}
+.class {
+    margin-bottom: 20px;
+}
+.form2 {
+    margin-bottom: 20px;
 }

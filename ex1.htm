@@ -8,39 +8,34 @@
     <link href="ex1.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <h1>Que Horas são?</h1>
-    </header>
+<section>
+<form class="tela">
+    <h1>O dia em que nasci</h1> 
+   <label for="dia">&nbsp;&nbsp;&nbsp;&nbsp;Informe o dia que nasceu:</label>
+   <input type="number"  id="dia" onblur="VerificaDia()"><br/>
+   <label for="mes">&nbsp;&nbsp;&nbsp;&nbsp;Informe o mês que nasceu:</label>
+   <input type="number"  id="mes" onblur="VerificaMes()"><br/>
+   <label for="ano">&nbsp;&nbsp;&nbsp;&nbsp;Informe o ano que nasceu:</label>
+   <input type="number"  id="ano" onblur="VerificaAno()"><br/><br/>
+   <center>
 
-    <section>
-    <div>
-        <h3>Informe o dia em que nasceu
-        <input type="number" name="txtdia" id="txtdia"> </h3>
-        <h3>Informe o mês em que nasceu
-        <input type="number" name="txtmes" id="txtmes"> </h3>
-        <h3>Informe o ano em que nasceu
-        <input type="number" name="txtano" id="txtano"> </h3>
-        
-        <h3>Seu mês de nascimento é</h3>
-        <h3>Você nasceu</h3>
-        <h3>Sob o signo de:</h3>
-        <h3>E a sua idade é:</h3>
-       
-        <input type="button" value="Enviar" id="btn" class="botoes">
-        <input type="reset" value="Limpar" id="rst" class="botoes">
-    </div>
-    </div>
-
-    <div>
-        oi
-    </div>
-
-    </section>
-
-    <footer>
-        <p>&copy; Rick</p>
-    </footer>
-
+   <input type="button" value="Exibir" onClick="Exibir()" class="botoes">
+   <input type="reset" value="Limpar" onClick="limpar()" class="botoes"/>
+ 
+  </center> 
+   <br/>
+   <div class="form2">
+<label for="rMes">&nbsp;&nbsp;&nbsp;&nbsp;Seu mês de nascimento é:</label>
+<input type="text" class="maior" id="rMes"  disabled/><br/>
+<label for="rDia">&nbsp;&nbsp;&nbsp;&nbsp;Você nasceu:</label>
+<input type="text" class="maior" id="rDia"  disabled/><br/>
+<label for="rSigno">&nbsp;&nbsp;&nbsp;&nbsp;Seu signo é:</label>
+<input type="text" class="maior" id="rSigno" disabled/><br/>
+<label for="rAnos">&nbsp;&nbsp;&nbsp;&nbsp;Você tem:</label>
+<input type="text" id="rAnos" size="2"  disabled/><br/>
+</div>
+</form>
+</section>
     <script src="script.js"> </script>
-</body>
+    </body>
 </html>
